@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".InfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/back_in_info"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/back_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Details of Order"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/logo" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="28dp"
+            android:layout_marginBottom="-18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Info"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/aclonica"
+                    android:textColor="@color/main"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Full Name:"
+                    android:textColor="@color/main"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="16sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/shape4"
+                    android:hint="Enter your full name"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number:"
+                    android:textColor="@color/main"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="16sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/shape4"
+                    android:hint="Enter your phone number"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:textColor="@color/main"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="16sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:textColor="@color/main"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/shape4"
+                    android:hint="Street, House, Flat, Floor"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"/>
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:backgroundTint="@color/main"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:cornerRadius="10dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Order"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

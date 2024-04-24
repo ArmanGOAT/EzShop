@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BE2EDD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="Welcome to "
+        android:textColor="#FFFFFFFF"
+        android:textSize="56sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_gravity="center"
+        android:text="EzShop"
+        android:textColor="#FFFFFFFF"
+        android:textSize="56sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="buy whenever "
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:layout_gravity="center"
+        android:text="and everywhere"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hello"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/main_start"
+        android:fontFamily="@font/aclonica"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textColor="#BE2EDD"
+        android:backgroundTint="#FFFFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:text="Let's Start"
+        android:textSize="40sp" />
+
+
+</LinearLayout>

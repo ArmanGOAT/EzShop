@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#BE2EDD"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="34dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_in_ver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_ic"/>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="33dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/aclonica"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="Registration"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="A 4-digit code has been sent to"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="example@gmail.com"/>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="70dp"
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:inputType="numberDecimal"
+            android:layout_height="80dp"
+            android:singleLine="true"
+            android:fontFamily="@font/aclonica"
+            android:paddingHorizontal="25dp"
+            android:background="@drawable/shape2"
+            android:textSize="25sp"
+            android:importantForAutofill="no"
+            android:textColorHint="#BE2EDD"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:layout_marginStart="8dp"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/aclonica"
+            android:textSize="25sp"
+            android:paddingHorizontal="25dp"
+            android:background="@drawable/shape2"
+            android:importantForAutofill="no"
+            android:textColorHint="#BE2EDD"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/aclonica"
+            android:importantForAutofill="no"
+            android:textSize="25sp"
+            android:paddingHorizontal="25dp"
+            android:background="@drawable/shape2"
+            android:textColorHint="#BE2EDD"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:fontFamily="@font/aclonica"
+            android:importantForAutofill="no"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:paddingHorizontal="25dp"
+            android:background="@drawable/shape2"
+            android:textColorHint="#BE2EDD"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/white"
+            android:drawableBottom="@drawable/underline_text"
+            android:textSize="20sp"
+            android:text="Resend code in "/>
+
+
+        <TextView
+            android:id="@+id/timer_in_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:drawableBottom="@drawable/underline_text"
+            android:textSize="20sp"
+            android:text="0:59"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="340dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/white"
+        android:text="Create account"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textColor="#BE2EDD"
+        android:textSize="30sp"
+        android:fontFamily="@font/aclonica"/>
+
+
+</LinearLayout>

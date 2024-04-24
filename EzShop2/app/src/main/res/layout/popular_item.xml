@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="204.5dp"
+    android:background="@color/main"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/grey"
+    android:layout_height="340dp">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:layout_margin="2dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageSetter3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/titleSetter3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/title"
+            android:textColor="@color/main"
+            android:textSize="22sp"
+            android:fontFamily="@font/aclonica" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/main"
+                android:textSize="16sp"
+                android:fontFamily="@font/aclonica"/>
+
+
+            <TextView
+                android:id="@+id/priceRate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:text="777$"
+                android:fontFamily="@font/aclonica"
+                android:textSize="20sp"
+                android:textColor="@color/main"
+                android:layout_marginStart="50dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/search_add_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:backgroundTint="@color/main"
+            android:text="Add to cart"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+

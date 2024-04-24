@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:text="My Cart"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcView_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="Total:"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/price"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/proceed_button"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/aclonica"
+            android:text="Continue"
+            android:textColor="@color/main"
+            android:textSize="30sp"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>
